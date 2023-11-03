@@ -1,6 +1,6 @@
 users = ['user1', 'user2', 'user3', 'user1', 'user4', 'user2']
 
-users_2 = {'user1', 'user2', 'user3', 'user1', 'user4', 'user2'}
+users_2 = set(users)
 
 dict_users = {
     "Общее количество": 0,
