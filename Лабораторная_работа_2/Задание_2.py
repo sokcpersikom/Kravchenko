@@ -5,7 +5,7 @@ increase = 0.03  # Ежемесячный рост цен
 
 bag = 0
 
-for k in range(1, months + 1):
+for k in range(0, months):
     bag += spend
     spend *= increase + 1
 
