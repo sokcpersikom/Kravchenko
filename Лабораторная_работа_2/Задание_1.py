@@ -3,16 +3,13 @@ salary = 5000  # Ежемесячная зарплата
 spend = 6000  # Траты за первый месяц
 increase = 0.05  # Ежемесячный рост цен
 
-month = 1
+month = 0
 rest = money_capital + salary - spend
 
-while rest >= 0:
+while rest > 0:
     spend *= (increase + 1)
     rest += salary - spend
-    if rest < 0:
-        break
-    else:
-        month += 1
+    month += 1
 
 print("Количество месяцев, которое можно протянуть без долгов:", month)
 
